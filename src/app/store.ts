@@ -3,6 +3,9 @@ import counterReducer from '../features/counter/counterSlice';
 
 export const store = configureStore({
   reducer: {
+// reducerを識別するために、名前をつける。このcounterと言う名前は、counterSliceの
+// export const selectCount = (state: RootState) => state.counter.valueの
+// counterと一致させる必要がある。
     counter: counterReducer,
   },
 });
